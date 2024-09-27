@@ -6,7 +6,10 @@
   .about-containers {
     flex-wrap: wrap;
   }
-  #reflection .reflection-container {
+  #reflection {
+    margin: 0 8rem;
+  }
+  .reflection-container {
     padding: 2rem 1rem; /* Adjust padding for smaller screens */
   }
   #contact,
@@ -26,14 +29,25 @@
   .experience-details-container {
     margin-top: 2rem;
   }
+
   #profile,
   .section-container {
     display: block;
   }
-  #reflection .reflection-container {
-    font-size: 1rem; /* Adjust font size for better readability */
-    padding: 1.5rem; /* Adjust padding */
+
+  #reflection{
+    margin: 0 5rem;
+  } 
+
+  .reflection-container {
+    font-size: 1rem; 
+    padding: 1.5rem; 
   }
+
+  #reflection strong{
+    font-size: 1.1rem;
+  }
+
   .arrow {
     display: none;
   }
@@ -41,14 +55,17 @@
   .section-container {
     height: fit-content;
   }
+
   section {
     margin: 0 5%;
   }
+
   .section__pic-container {
     width: 275px;
     height: 275px;
     margin: 0 auto 2rem;
   }
+
   .about-containers {
     margin-top: 0;
   }
@@ -66,12 +83,20 @@
   article {
     font-size: 1rem;
   }
-  #reflection .reflection-container {
-    font-size: 0.9rem; /* Slightly smaller font for small screens */
-    padding: 1rem; /* Compact padding */
+  #reflection{
+    margin: 0 2rem;
   }
-  #reflection ul {
-    padding-left: 1rem;
+
+  .reflection-container {
+    font-size: 0.9rem; 
+    padding: 1rem;
+  }
+  #reflection strong{
+    font-size: 1rem;
+  }
+  #reflection p {
+    font-size: 0.9rem;
+    line-height: 1.4;
   }
   #reflection ul li {
     font-size: 0.9rem;

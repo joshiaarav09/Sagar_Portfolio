@@ -333,16 +333,16 @@ section {
 }
 
 .experience-details-container li {
-  position: relative; /* To position the hyphen */
-  padding: 2px 0 2px 1.2rem; /* Add padding to give space for the hyphen */
+  position: relative; 
+  padding: 2px 0 2px 1.2rem; 
   
 }
 
 .experience-details-container li::before {
-  content: '-'; /* Add hyphen before each item */
-  position: absolute; /* Position it absolutely */
-  left: 0; /* Align it to the left */
-  color: rgb(85, 85, 85); /* Optional: Set hyphen color */
+  content: '-'; 
+  position: absolute; 
+  left: 0; 
+  color: rgb(85, 85, 85); 
 }
 
 
@@ -420,14 +420,16 @@ section {
 .reflection-container {
   padding: 1.5rem;
   background-color: #f4f4f4;
-  border-radius: 10px;
+  border-radius: 2rem;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: justify;
 }
 
 #reflection p {
   color: rgb(85, 85, 85);
   line-height: 1.6;
   margin-bottom: 1rem;
+  text-align: justify;
 }
 
 #reflection strong {
