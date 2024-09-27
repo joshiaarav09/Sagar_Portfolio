@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Sagar Joshi</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#reflection">Reflection</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Sagar Joshi</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#reflection" onclick="toggleMenu()">Reflection</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/profile_picc.png" alt="Sagar Joshi profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Sagar Joshi</h1>
+        <p class="section__text__p2">Mechanical Engineer</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/resume.pdf')"
+          >
+            Download CV
+          </button>
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/cover_letter.pdf')"
+          >
+            Download Cover Letter
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://www.linkedin.com/in/sagar-joshi-901ba228a'"
+          />
+          <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/'"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./assets/about_pic.png"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Experience</h3>
+              <p>3+ years <br />Project Manager and Mechanical Engineer</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>Mechanical Engineering<br />M.S Professional Engineering</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p style="text-align: justify;">
+              I am a final-year master’s student in Mechanical Engineering at the University of Technology Sydney. I seek a job to apply my academic knowledge and hands-on experience in mechanical design, project management, and technical documentation. I am proficient in industry-standard software like AutoCAD, ANSYS, and Solid Edge, and I have a proven ability to lead multidisciplinary engineering projects to successful completion.
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
+    </section>
+    <section id="experience">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Experience</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Project Manager</h2>
+            <p><strong>Pu Chuang Technology Pvt. Ltd., Kathmandu, Nepal</strong></p>
+            <p><em>Nov 2019 - Jan 2022</em></p>
+            <ul>
+              <li>Oversaw the installation and testing of an Underground Optical Fiber Network and 4G Telecommunications Towers.</li>
+              <li>Directed multidisciplinary teams, managed budgets, and maintained quality and safety standards for Nepal Telecom's 4G Network project.</li>
+              <li>Led the planning and execution of key project phases.</li>
+              <li>Controlled costs, compiled bids, and managed subcontractor relations.</li>
+              <li>Ensured compliance with project guidelines and mitigated risks.</li>
+            </ul>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Mechanical Engineer</h2>
+            <p><strong>Pu Chuang Technology Pvt. Ltd., Kathmandu, Nepal</strong></p>
+            <p><em>Sep 2018 - Oct 2019</em></p>
+            <ul>
+              <li>Managed equipment and systems for optical fiber cable trenching and installation, ensuring operational efficiency and mechanical protection.</li>
+              <li>Conducted structural analysis for telecommunications towers to ensure safety and stability.</li>
+              <li>Designed protective conduit systems for optical fiber cables.</li>
+              <li>Performed stress and load analysis on telecommunication towers.</li>
+              <li>Supported the design and installation of HVAC and safety systems.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      />
+    </section>
+    <section id="projects">
+      <p class="section__text__p1">Browse My</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+
+          <!--Project One-->
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-1.png"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Studies on Mechanical Behaviors of Epoxy Resin Composite</h2>
+            <button class="btn btn-color-2 project-btn" onclick="toggleDetails('project1Details')">Details</button>
+            <div id="project1Details" class="project-details" style="display: none;">
+              <p style="text-align: justify;">
+                Engineered a physical composite material by varying proportions of epoxy resin, e-glass, carbon fibre, and granite powder. Also, conducted mechanical tests to evaluate the material's tensile strength, compressive strength, and durability.
+              </p>
+            </div>
+          </div>
+
+          <!--Project Two-->
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-2.png"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Hydrogen Storage Optimization in Metal Hydrides</h2>
+            <button class="btn btn-color-2 project-btn" onclick="toggleDetails('project2Details')">Details</button>
+            <div id="project2Details" class="project-details" style="display: none;">
+              <p style="text-align: justify;">
+                Currently utilising CFD simulations to optimise hydrogen storage capacities in metal hydrides. Employing Solid Edge for precise design and modelling of storage compartments. Aiming to improve storage efficiency and reduce costs, contributing to sustainable energy solutions.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#reflection'"
+      />
+    </section>
+    <!-- Reflection Section -->
+    <section id="reflection">
+      <p class="section__text__p1">My Thoughts</p>
+      <h1 class="title">Reflection</h1>
+      <div class="reflection-container">
+        <p style="text-align: justify;">
+          <strong>Reflection on Principles of Sustainability to Create Viable Systems</strong><br />
+          In mechanical engineering, sustainability plays a central role in designing systems that are efficient, environmentally responsible, and beneficial to society. My work on Hydrogen Storage Optimization in Metal Hydrides is one example of integrating these principles. The project focused on improving the capacity and efficiency of hydrogen storage, which is critical for developing renewable energy systems (Staffell et al., 2019).
+        </p>
+        <p style="text-align: justify;">
+          This project highlighted key sustainability principles, such as lifecycle thinking and resource efficiency. We worked to minimize the system’s environmental footprint, aligning with global sustainability goals. This experience solidified my understanding that sustainability must be embedded at every stage of engineering design, from concept to implementation, to create truly viable systems for the future.
+        </p>
+        <p style="text-align: justify;">
+          <strong>Reflection on Professional Practice within Intercultural and Global Contexts</strong><br />
+          My role as a Project Manager at Pu Chuang Technology Pvt. Ltd. gave me invaluable experience in navigating intercultural and global contexts. Working on large-scale projects required me to manage diverse teams and collaborate with international stakeholders. I adjusted my communication and management style to accommodate cultural differences, which is crucial for effective project execution (Eringa et al., 2015).
+        </p>
+        <p style="text-align: justify;" >
+          This experience underscored that techsnical proficiency alone is not enough in global engineering projects—cultural competence and adaptability are equally crucial. In the future, I will continue to apply these intercultural skills to ensure success in diverse, global engineering environments.
+        </p>
+        <p><strong>References:</strong></p>
+        <ul>
+          <li>Staffell, I., et al. (2019). The role of hydrogen and fuel cells in the global energy system. Energy & Environmental Science, 12(2), 463-491.</li>
+          <li>Chakraborty, S., et al. (2021). Selected aspects of sustainable mobility reveals implementable approaches and conceivable actions. Sustainability, 13(22), 12918.</li>
+          <li>Eringa, K., et al. (2015). How relevant are Hofstede’s dimensions for inter-cultural studies? Research in Hospitality Management, 5(2), 187-198.</li>
+        </ul>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      />
+    </section>
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:sagarjoshi.aumail@gmail.com">sagarjoshi.au@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="http://www.linkedin.com/in/sagar-joshi-901ba228a">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#reflection">Reflection</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2024 Sagar Joshi. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
