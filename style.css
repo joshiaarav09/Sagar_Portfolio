@@ -266,9 +266,14 @@ section {
 
 #about {
   position: relative;
+  height: auto;
+  margin: 0 10rem;
+  box-sizing: border-box;
 }
 
 .about-containers {
+  display: flex;
+  flex-wrap: wrap;
   gap: 2rem;
   margin-bottom: 2rem;
   margin-top: 2rem;
@@ -277,8 +282,18 @@ section {
 .about-details-container {
   justify-content: center;
   flex-direction: column;
+  padding: 1.5rem;
+  height: auto;
+}
+.text-container {
+  text-align: justify;
+  line-height: 1.6;
+  color: rgb(85, 85, 85); 
 }
 
+.text-container p {
+  margin-bottom: 1rem; /* Adds space between paragraphs */
+}
 .about-containers,
 .about-details-container {
   display: flex;
@@ -327,8 +342,8 @@ section {
 } 
 
 .experience-details-container ul {
-  list-style-type: none; /* Remove default bullets */
-  padding-left: 0; /* Remove default padding */
+  list-style-type: none; 
+  padding-left: 0; 
   text-align: left;
 }
 
@@ -414,9 +429,14 @@ section {
   min-height: fit-content;
   position: relative;
 }
-/* Scoped Arrow in Reflection Section */
-
-
+.section__text__p1 {
+  text-align: center !important; 
+  display: block; 
+  width: 100%; 
+  font-size: 1.25rem; 
+  margin-bottom: 1rem; 
+  font-weight: 500; 
+}
 .reflection-container {
   padding: 1.5rem;
   background-color: #f4f4f4;

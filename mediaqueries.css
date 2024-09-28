@@ -3,8 +3,11 @@
     height: 83vh;
     margin-bottom: 6rem;
   }
-  .about-containers {
-    flex-wrap: wrap;
+  #about{
+    margin: 0 8rem;
+  }
+  .about-details-containers {
+    padding: 2rem 1rem;
   }
   #reflection {
     margin: 0 8rem;
@@ -65,9 +68,15 @@
     height: 275px;
     margin: 0 auto 2rem;
   }
+  #about{
+    margin: 0 5rem;
+  }
 
-  .about-containers {
-    margin-top: 0;
+  .about-details-containers {
+    padding: 1.5rem;
+  }
+  .text-container{
+    font-style: 1rem;
   }
 }
 
@@ -106,6 +115,12 @@
     height: fit-content;
     margin-bottom: 2rem;
   }
+  #about{
+    margin: 0 2rem;
+  }
+  .about-details-container{
+    padding: 1rem;
+  }
   .about-containers,
   .contact-info-upper-container,
   .btn-container {
@@ -141,6 +156,10 @@
     font-size: 2rem;
   }
   .text-container {
-    text-align: justify;
+    font-size: 0.9rem;
+    line-height: 1.4;
+  }
+  .text-container p{
+    margin-bottom: 0.8rem;
   }
 }
