@@ -275,8 +275,8 @@ section {
   display: flex;
   flex-wrap: wrap;
   gap: 2rem;
-  margin-bottom: 2rem;
-  margin-top: 2rem;
+  justify-content: space-between;
+  
 }
 
 .about-details-container {
@@ -310,15 +310,22 @@ section {
 }
 
 .details-container {
+  flex-basis: calc(50% - 1rem);
   padding: 1.5rem;
-  flex: 1;
+  max-width: 600px;
+  min-width: 300px ;
   background: white;
   border-radius: 2rem;
   border: rgb(53, 53, 53) 0.1rem solid;
   border-color: rgb(163, 163, 163);
   text-align: center;
+  box-sizing: border-box;
 }
-
+.project-img{
+  width:100%;
+  height: auto;
+  border-radius: 1.5rem;
+}
 .section-container {
   gap: 4rem;
   height: 80%;
