@@ -8,6 +8,7 @@
   }
   .about-details-containers {
     padding: 2rem 1rem;
+    flex-basis: calc(50% - 1rem);
   }
   #reflection {
     margin: 0 8rem;
@@ -74,6 +75,7 @@
 
   .about-details-containers {
     padding: 1.5rem;
+    flex-basis: calc(50% - 1rem);
   }
   .text-container{
     font-style: 1rem;
@@ -119,7 +121,10 @@
     margin: 0 2rem;
   }
   .about-details-container{
-    padding: 1rem;
+    padding: 1rem; 
+  }
+  .details-container {
+    flex-basis: 100%; 
   }
   .about-containers,
   .contact-info-upper-container,
